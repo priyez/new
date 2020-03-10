@@ -1,0 +1,16 @@
+{
+    "name": "Sopiriye",
+    "short_name": "Sopiriye",
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#1b2735",
+    "background_color": "#1b2735",
+    "description": "",
+    "icons": [
+        {
+          "src": "./html5.png",
+          "sizes": "512x512",
+          "type": "image/png"  
+        }
+    ]
+}

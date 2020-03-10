@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="css/fontawesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/all.css"> -->
+    <!-- <link rel="stylesheet" href="dark.css"> 
+    <script src="https://cdn.jsdelivr.net/highlight.js/9.9.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  
+      <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+      <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+      <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <link rel="manifest" href="manifest.json">
+        <!--===============================================================================================-->
+  
+</head>
+<body style="background-color: #fff;color: #000;">
+  <h4 class="H">H</h4>
+    <!-- <input type="button" value="More" class="abouthalf"> -->
+    <header>
+      <div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
+      <h4 class="hello">HELLO!</h4>
+      <div>
+        <div class="line1">
+          <P class="pw0">I'M <span id="typewriter" class="writter">21</span> SOPIRIYE JAMABO</P>
+        </div>
+        <div class="line2"> 
+    <P class="pw">I LIKE<span id="typewriter" class="writter"></span></P>
+        </div>
+        <div class="line3"> 
+    <P class="pw2">I STUDY AT<span id="typewritertwo" class="writter2"></span></P>
+     </div>
+      </div> <p class="homeintro"> I'm Sopiriye, i'm a Web developer with the skill to build Web apps with beautiful user interfaces</p>
+      <div>
+        <p></p>
+      </div>
+      <div>
+        <button class="homebutton">
+          <a href="about.html"><input type="button" value="  About me" class="homeabout"></a>
+          <a href="Projects.html"><input type="button" value="See my Projects" class="seeportfolio"></a>
+        </button>
+        <button class="homebuttondesk">
+          <a href="Projects.html"><input type="button" value="  See my Projects" class="homeabt"></a>
+          <a href="contact.html"><input type="button" value="Contact me" class="seeportfolio"></a>
+        </button>
+      </div>
+<li class="icon">
+    <a href="" style="margin-right:7px;"><img src="link.png" width="20px" height="20px"></a>
+    <a href="" style="margin-right:7px;" ><img src="github.png" width="20px" height="20px"></a>
+    <a href="" style="margin-right:7px;" ><img src="twitter.png" width="20px" height="20px"></i></a>
+    <a href="" style="margin-right:7px;" ><img src="whatsapp.png" width="20px" height="20px"></i></a>
+  </li>
+    </header>
+  <ul id="menu">
+    <li class="subm">
+      <a href="#" title="Skills"><i class="fa fa-home"></i></a>
+    </li>
+    <li class="subm" >
+      <a href="about.html" title="About me"><i class="fa fa-user"  ></i></a>
+    </li>
+    <li class="subm">
+      <a href="Projects.html" title="Projects"><i class="fa fa-code"></i></a>
+    </li>
+    <li class="subm">
+      <a href="contact.html" title="Projects"><i class="fa fa-phone"></i></a>
+    </li>
+   
+  </ul>
+      <script>
+    
+        var panel = document.getElementById('panel'),
+            menu = document.getElementById('menu'),
+            showcode = document.getElementById('showcode'),
+            selectFx = document.getElementById('selections-fx'),
+            selectPos = document.getElementById('selections-pos'),
+            // demo defaults
+            effect = 'mfb-zoomin',
+            pos = 'mfb-component--br';
+    
+        showcode.addEventListener('click', _toggleCode);
+        selectFx.addEventListener('change', switchEffect);
+        selectPos.addEventListener('change', switchPos);
+    
+        function _toggleCode() {
+          panel.classList.toggle('viewCode');
+        }
+    
+        function switchEffect(e){
+          effect = this.options[this.selectedIndex].value;
+          renderMenu();
+        }
+    
+        function switchPos(e){
+          pos = this.options[this.selectedIndex].value;
+          renderMenu();
+        }
+    
+        function renderMenu() {
+          menu.style.display = 'none';
+          // ?:-)
+          setTimeout(function() {
+            menu.style.display = 'block';
+            menu.className = pos + effect;
+          },1);
+        }
+    
+
+      </script>
+<script>
+var string="I LOVE CODING </> ";
+var hero = string.split("");
+var el= document.getElementById('hero');
+(function animate(){
+    hero.length > 0 ? el.innerHTML += hero.shift():clearTimeout(running);
+    var running= setTimeout(animate, 100);
+}) (); 
+
+</script>
+  <script>
+    function popabout() {
+      var pop1=document.getElementById("pop1");
+      pop1.classList.toggle("show1")
+    }
+  </script>
+ <!-- scripts -->
+ <script src='core2.js'></script>
+ <script src='core.js'></script>
+ <script type='text/javascript'>
+  const typewritertwo = new Typewritertwo('#typewritertwo', {
+    loop: false,
+  });
+
+  typewritertwo.typeString(' UNIPORT')
+    .pauseFor(2500)
+      .start();
+</script>
+  <script type='text/javascript'>
+    const typewriter = new Typewriter('#typewriter', {
+      loop: true,
+    });
+
+    typewriter.typeString(' PROGRAMMING')
+      .pauseFor(2500)
+      .deleteAll()
+      .typeString('DESIGNING')
+        .start();
+  </script>
+<script src="app.js"></script>
+
+<!-- stats.js -->
+
+<script>
+function goBack() {
+  windows.history.goBack();
+}
+</script>
+<script>
+  function dark(){
+    var element= document.body;
+    element.classList.toggle("darkmode");
+  }
+</script>
+</body>
+</html>

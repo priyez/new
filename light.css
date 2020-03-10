@@ -1,0 +1,194 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:  #fff;
+} 
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),  url("background.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    clip-path: polygon(0 0%,0 100%, 600% 0%, 10% 0);
+    -webkit-clip-path: polygon(0 0%,0 100%, 600% 0%, 10% 0);
+}
+#hero {
+    font-size: 30px;
+    font: 300 250%/160% 'Open Sans';
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    padding-top: 100px;
+    margin-top: -120.5px;
+    transition: ease-in 0.5s;
+}
+.hel {
+  color: white;
+}
+#menu {
+  position: fixed;
+  right: 0;
+  top: 20%;
+  margin-top: -2.5em;
+}
+.subm {
+  list-style: none;
+  font-size: 20px;
+  margin: 5px;
+  margin-top: 15px;
+  color: black;
+  cursor: pointer;
+}
+.subm:hover{
+  border: black;
+}
+.popone{
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+#poptext1{
+  visibility: hidden;
+  width: 150px;
+  background-color: #555;
+  position: absolute;
+  z-index: 1;
+}
+.abh{
+  right: 0;
+  top: 50%;
+  margin-top: -3.3em;
+  color: #00BCD4;
+  float: right;
+  margin-right: 10px;
+}
+.aboutc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.about-img{
+  width: 300px;
+  height: 300px;
+  border-radius: 10em;
+}
+@media (min-width:320px) and (max-width:767px) {
+  header {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),  url("background.jpg");
+    height: 60vh;
+    width: 100%;
+    background-size: cover;
+    clip-path: polygon(0 0%,0 100%, 600% 0%, 10% 0);
+    -webkit-clip-path: polygon(0 0%,0 100%, 600% 0%, 10% 0);
+}
+
+.aboutmobile{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.about-img{
+  width: 368px;
+  height: 370px;
+  border-radius: 70em;
+}
+.abouttext {
+  color: #555;
+  font-size: 19px;
+  width: 100%;
+}
+#hero{
+  display: inline-block;
+  position: absolute;
+  opacity: 15%;
+  font-size: 65px;
+  padding-left: 30px;
+}
+.abh{
+  right: 0;
+  top: 50%;
+  margin-top: -1.4em;
+  color: #00bcd499;
+  float: right;
+  margin-right: 10px;
+  font: 200 200% 'Raleway';
+  /* text-shadow: #C0C0C0 -1px 1px 0, #C2C2C2 -2px 2px 0, #C3C3C3 -3px 3px 0, #C5C5C5 -4px 4px 0, #C6C6C6 -5px 5px 0, #C8C8C8 -6px 6px 0, #C9C9C9 -7px 7px 0, #CBCBCB -8px 8px 0, #CCC -9px 9px 0, #CECECE -10px 10px 0, #CFCFCF -11px 11px 0, #D1D1D1 -12px 12px 0, #D2D2D2 -13px 13px 0, #D4D4D4 -14px 14px 0, #D5D5D5 -15px 15px 0, #D7D7D7 -16px 16px 0, #D8D8D8 -17px 17px 0, #DADADA -18px 18px 0, #DBDBDB -19px 19px 0, #DDD -20px 20px 0, #DFDFDF -21px 21px 0, #E0E0E0 -22px 22px 0, #E2E2E2 -23px 23px 0, #E3E3E3 -24px 24px 0, #E5E5E5 -25px 25px 0, #E6E6E6 -26px 26px 0, #E8E8E8 -27px 27px 0, #E9E9E9 -28px 28px 0, #EBEBEB -29px 29px 0, #ECECEC -30px 30px 0, #EEE -31px 31px 0, #EFEFEF -32px 32px 0, #F1F1F1 -33px 33px 0, #F2F2F2 -34px 34px 0, #F4F4F4 -35px 35px 0, #F5F5F5 -36px 36px 0, #F7F7F7 -37px 37px 0, #F8F8F8 -38px 38px 0, #FAFAFA -39px 39px 0, #FBFBFB -40px 40px 0, #FDFDFD -41px 41px 0, #FFF -42px 42px 0; */
+}
+.abh:before {
+  -webkit-transition: .6s;
+  -moz-transition: .6s;
+  -o-transition: .6s;
+  transition: .6s;
+  content: '';
+  position: absolute;
+  bottom: 40%;
+  width: 40%;
+  height: 8px;
+  background: #00bcd499;
+  pointer-events: none;
+  -webkit-touch-callout: none;
+}
+}
+
+.icon {
+     list-style: none;
+    position: absolute;
+    bottom: 60%;
+    left: 13%;
+}
+
+#abouticon{
+margin: 10px;
+}
+p {
+  color: #555;
+  font-size: 18px;
+  width: 80%;
+}
+.abh:before {
+  -webkit-transition: .6s;
+  -moz-transition: .6s;
+  -o-transition: .6s;
+  transition: .6s;
+  content: '';
+  position: absolute;
+  bottom: 40%;
+  width: 40%;
+  height: 8px;
+  background: #00bcd499;
+  pointer-events: none;
+  -webkit-touch-callout: none;
+}
+.iconborder{
+  border: solid 1px;
+  font-size: 90px;
+  list-style: none;
+  margin: 13px;
+  width: 90px;
+}
+.fa-css3:before {
+  content: "\f13c";
+  font-size: 40px;
+  margin-top: 30px;
+  top: 94%;
+  left: 45%;
+  /* padding-top: 30%; */
+  position: absolute;
+}
+.fa-html5:before {
+  content: "\f13c";
+  font-size: 45px; 
+  margin-top: 30px;
+  top: 94%;
+  left:12%;
+  /* padding-top: 30%; */
+  position: absolute;
+}
+.project{
+  background:#000;
+    height: 60vh;
+    width: 100%;
+    background-size: cover;
+    clip-path: polygon(0 0%,0 100%, 600% 100%, 0% 0);
+    -webkit-clip-path: polygon(0 0%,0 100%, 600% 100%, 0% 0);
+}

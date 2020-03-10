@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="dist/aos.css" />
+</head>
+<body >
+      <div class="aboutheader">
+        <a href="" onclick="goBack()" class="back">
+        <i  class="fa fa-chevron-left"></i>
+        </a>
+        <div class="aos-item" data-aos="zoom-in"></div>
+    <div class="abt">
+<p> ABOUT ME</p>
+    </div>
+        <div class="abtimg">
+       <img src="abtimg.jpg" alt="" width="150px" height="150px" style="border-radius: 20em;position: relative;left: 28%; top: 30px;" class="aos-item" data-aos="zoom-in">
+        </div>
+        </div>
+        <table>
+        <tr class="aboutmobile" class="aos-item" data-aos="zoom-in">
+          <th colspan="2"><p id="hero"> </p> </th>
+          <td class="aboutt"><p class="abouttext">Hi! i'm sopiriye jamabo, a Web developer based in port-harcourt, Nigeria.Growing up during the early 2000,my mum just got this mobilephone with a 2G connection,i will surf through the phone ,trying to find out what's causes the output.From there my intrest fot technology ,internet started. i started teaching myself how to code ,I'm a passionate software developer with 2+ years of experience  </p>
+            <p class="wdi">WHAT I DO</p>
+            <p class="webd">WEB DEVELOPMENT</p>
+          <p class="wditext">I build web applications with great user interface, with the latest technologies and frame works<i class="fa fa-heart"></i> </p>
+      
+          <table id="mobileicon" class="skilltext">
+            <p class="techskills">TECH SKILLS</p>
+              <tr class="aos-item" data-aos="fade-in">
+        <td><li class="iconborder" ><img src="html5.png" width="45px" height="45px" style="padding-left: 21px;"><p style="padding-left: 20%; font-size: 15PX; position: relative; top: -30px;">HTML5</p></li></td>
+        <td><li class="iconborder" ><img src="css3.png" width="45px" height="45px" style="padding-left: 21px;"><p style="padding-left: 30%; font-size: 15PX; position: relative; top: -30px;">CSS3</p></li></td>
+        <td><li class="iconborder" ><img src="js.png" width="45px" height="45px" style="padding-left: 21px;"><p style="padding-left: 20%; font-size: 15PX; position: relative; top: -30px;">Javascript</p></li></td>
+              </tr>
+              <br>
+              <td><li class="iconborder" ><img src="react.png" width="45px" height="45px" style="padding-left: 21px;"><p style="padding-left: 20%; font-size: 15PX; position: relative; top: -30px;">React js</p></li></td>
+             <td><li class="iconborder" ><img src="php.png" width="45px" height="45px" style="padding-left: 21px;"><p style="padding-left: 30%; font-size: 15PX; position: relative; top: -30px;">Php</p></li></td>
+             <td><li class="iconborder" ><img src="node.png" width="45px" height="45px" style="padding-left: 21px;"><p style="padding-left: 20%; font-size: 15PX; position: relative; top: -30px;">Node js</p></li></td>
+        
+               </table>
+          </td>
+        </tr>
+        </table>
+      
+      </div>
+      
+        </div>
+        
+          <ul id="menu">
+            <li class="subm">
+              <a href="index.html" title="Skills"><i class="fa fa-home"></i></a>
+            </li>
+            <li class="subm" >
+              <a href="about.html" title="About me"><i class="fa fa-user"  ></i></a>
+            </li>
+            <li class="subm">
+              <a href="projects.html" title="Projects"><i class="fa fa-code"></i></a>
+            </li>
+            <li class="subm">
+                <a href="contact.html" title="Projects"><i class="fa fa-phone"></i></a>
+              </li>
+            
+          </ul>
+        
+          <script>
+            var string="Sopiriye ";
+            var hero = string.split("");
+            var el= document.getElementById('sign');
+            (function animate(){
+                hero.length > 0 ? el.innerHTML += hero.shift():clearTimeout(running);
+                var running= setTimeout(animate, 100);
+            }) (); 
+            
+            </script>
+             <script>
+              var string="I LOVE CODING </> ";
+              var hero = string.split("");
+              var el= document.getElementById('hero');
+              (function animate(){
+                  hero.length > 0 ? el.innerHTML += hero.shift():clearTimeout(running);
+                  var running= setTimeout(animate, 100);
+              }) (); 
+              
+              </script>
+            <script>
+              function goBack() {
+                window.history.goBack();
+              }
+              </script>
+              <script>
+function dark(){
+  var element=document.body;
+  element.classList.toggle("darkmode");
+}
+
+              </script>
+              <script src="dist/aos.js"></script>
+              <script>
+                AOS.init({
+                  easing: 'ease-in-out-sine'
+                });
+              </script>
+                <div class="aboutfooter">
+                  <a href="tel:238152243656" class="phonefooter">(234) 815 2243 656</a>
+                <a href="mailto:jayspriye@gmail.com" class="emailfooter">Jayspriye@gmail.com</a>
+                </div>
+</body>
+</html>

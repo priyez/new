@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+            <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="dist/aos.css" />
+      <link rel="manifest" href="./manifest.json">
+</head>
+<body>
+    <section class="aos-item" data-aos="zoom-in">
+        <div style="background:#0a0b0e;" >
+            <a href="" onclick="goBack()" class="back">
+            <i  class="fa fa-chevron-left"></i>
+            </a>
+            <h2 class="ph2">CONTACT</h2>
+            <h3 class="ph3">ME</h3>
+          </div>
+         <p class="sayhello">-SAY HELLO</p>
+          <div class=" contacthead">
+          <h3>Intrested ?</h3>
+          <h2>Let's talk...</h2>
+          </div>
+          
+      <button class="contactbutton" id="contactform"><p>Send me a message <i class="fa fa-inbox" style="color: #fff;"></i></p></button>
+      
+      <img src="contactimg.png" class="contactimg">
+
+
+          <footer class="contactfooter">
+            <a href="tel:238152243656" class="phonefooter">(234) 815 2243 656</a>
+            <a href="mailto:jayspriye@gmail.com" class="emailfooter">Jayspriye@gmail.com</a>
+            
+          </footer>  
+    </section>
+     
+    <ul id="menu">
+        <li class="subm">
+          <a href="index.html" title="Skills"><i class="fa fa-home"></i></a>
+        </li>
+        <li class="subm" >
+          <a href="about.html" title="About me"><i class="fa fa-user"  ></i></a>
+        </li>
+        <li class="subm">
+          <a href="projects.html" title="Projects"><i class="fa fa-code"></i></a>
+        </li>
+        <li class="subm">
+            <a href="contact.html" title="Projects"><i class="fa fa-phone"></i></a>
+          </li>
+         
+      </ul>
+      <div id="popupBoxFourPosition">
+        <div class="popupBoxWrapper">
+          <div class="popupBoxContent">
+            <div class="boximg">
+              <ul class="contactic">
+                <table>
+                  <tr>
+                <td><li style="margin-left:-60px ;"><a href=""><img src="boximg.PNG" alt="" width="25px" height="25px"> <a href=""></a></li></td>
+                <td><li style="margin-left: 40px;"><a href=""><img src="whatsapp.PNG" alt="" width="21px" height="21px"> <a href=""></a></li></td>
+                <td><li style="margin-left: 70px;"><a href=""><img src="whatsapp.PNG" alt="" width="21px" height="21px"> <a href=""></a></li></td>
+               
+              </tr>
+               
+                </table>
+              </ul>
+              </div>
+           <div class="infoabout" style="line-height: 3.6;"> 
+             <input type="text" placeholder="Name" class="input">
+             <input type="email" placeholder="Email" class="input">
+             <input type="text" placeholder="Message" class="message">
+             <button  >
+               <input type="button" value="Send" >
+               <p id="closebox4">Close</p>
+             </button>
+              </div>
+          </div>
+          
+          </div>
+        </div>
+      </div>
+<script>
+  //contact js
+var elpopupBoxFourPosition = document.getElementById('popupBoxFourPosition');
+ var closeclosebox4 = document.getElementById('closebox4');
+
+document.getElementById('contactform').addEventListener('click', function(){
+  if(elpopupBoxFourPosition.style.display == 'block')
+    elpopupBoxFourPosition.style.display = 'none';
+  else
+    elpopupBoxFourPosition.style.display = 'block';
+});
+  
+// When the user clicks on Click here to close modal
+closeclosebox4.onclick = function() {
+    elpopupBoxFourPosition.style.display = "none";
+}
+</script>
+
+      <script>
+        var string="I LOVE CODING </> ";
+        var hero = string.split("");
+        var el= document.getElementById('hero');
+        (function animate(){
+            hero.length > 0 ? el.innerHTML += hero.shift():clearTimeout(running);
+            var running= setTimeout(animate, 100);
+        }) (); 
+        
+        </script>
+        <script>
+          function goBack() {
+            window.history.goBack();
+          }
+          </script>
+          <script>
+function dark(){
+var element=document.body;
+element.classList.toggle("darkmode");
+}
+
+          </script>
+          <script src="dist/aos.js"></script>
+          <script>
+            AOS.init({
+              easing: 'ease-in-out-sine'
+            });
+          </script>
+            
+</body>
+</html>
